@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <button onclick="myFunction()">dark-mode</button>
+
+    </head>
+    <body>
+
+      <style>
+        .head {
+          color: blue;
+          font-weight: bold;
+          font-family: serif;
+          font-size: 22px;
+        }
+
+        #name {
+          font-size: 32px;
+          font-family: sans-serif;
+        }
+
+        body{
+          font-family: serif;
+          font-size: 16px;
+
+        }
+
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+
+        button {
+          padding: 10px;
+          background-color: grey;
+          color: white;
+          float: right;
+        }
+
+      </style>
+
+      <body>
+
+        <table>
+          <thead>
+            <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnnn4yiByjfu7bxWQdIrCpB6CqFrZr36gVcg&usqp=CAU.jpg" width="90" </td>
+          <td><h1 id=name> Aisha Abdulmajid</h1></td>
+          <td>08160507756<br>
+              aishaabdulmajid25@gmail.com</td>
+
+          </thead>
+
+            <tbody>
+
+          <tr>
+          <td class="head">About</td>
+          <td> I'm a communication specialist and a field worker. I specialize in<br>
+              data collection and entry. Because i love what i do, i make sure i do<br>
+              it to near perfection.
+          </td>
+          </tr>
+
+          <tr>
+          <td class="head">Interest</td>
+          <td>Data Collection| Data Entry| Travelling</td>
+          </tr>
+
+          <tr>
+          <td class="head">Skills</td>
+          <td> <img src= "https://i.stack.imgur.com/PgcSR.png" width="100" <br>
+              <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSh66yzE_I5f4rQ7-OrTBOVMgYbM0w_CgiWKg&usqp=CAU.png" width="100" <br>
+              <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYvojrQH9ga-AHhE5bi4x0CuubfYWnPVYZTw&usqp=CAU width="80" </td>
+
+          <tr>
+
+          <td class="head">Education</td>
+          <td> B.Sc. Mass Commmunication<br>
+              Bayero University, Kano.</td>
+          <td>2014-2018</td>
+
+          <tr>
+          <td></td>
+          <td>ND in Public Administration<br>
+              School of Management Studies<br>
+              Kano State Polytechnic.</td>
+          <td>2013-2015</td>
+          </tr>
+
+          <tr>
+          <td></td>
+          <td>SSCE<br>
+              ECWA Secondary School<br>
+              Airport Road, Kano.</td>
+          <td>2006-2012</td>
+          </tr>
+
+          <tr>
+          <td></td>
+          <td>First School Leaving Certificate<br>
+              Lufaloy Nursery and Primary School<br>
+              Audu Bako Way, Kano.</td>
+          <td>1999-2006</td>
+          </tr>
+
+          <tr>
+          <td class="head">Experience</td>
+          <td>Supervisor SMC Impacts Assessment<br>
+              Malaria Consurtium.</td>
+          <td>2020</td>
+          </tr>
+
+          <tr>
+          <td></td>
+          <td>Data Entry Clerk<br>
+              Management Sciences for Health</td>
+          <td>2018 till date</td>
+          </tr>
+
+          <tr>
+          <td></td>
+          <td>Field Enumerator/Tracker<br>
+              Mercy Corps</td>
+          <td>2019</td>
+          </tr>
+
+          <tr>
+          <td></td>
+          <td>Research Assistant<br>
+              AFRI-CIRD, Kano</td>
+          <td>2018/19</td>
+          </tr>
+
+          <tr>
+          <td class="head">Project</td>
+          <td> <a href="https://github.com/aishaabdulmajid/ehealthacademyassignments">github.com/eha-academy-project</td>
+          </tr>
+
+          </table>
+
+          <button onclick = "topFunction()"
+                    id = "myBtn"
+                    title = "Go to top"> Back to top </button>
+
+
+          <script>
+
+          function myFunction() {
+             var element = document.body;
+             element.classList.toggle("dark-mode");
+           }
+
+         mybutton = document.getElementById("myBtn");
+         window.onscroll = function () {scrollFunction()};
+
+         function scrollFunction() {
+                     if (document.body.scrollTop > 20 ||
+                       document.documentElement.scrollTop > 20) {
+                         mybutton.style.display = "block";
+                       } else {
+                         mybutton.style.display = "none";
+                       }
+                       }
+
+                     function topFunction () {
+                       document.body.scrollTop = 0;
+                       document.documentElement.scrollTop = 0;
+                     }
+
+          </script>
+
+
+    </body>
+</html>
